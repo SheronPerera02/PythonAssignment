@@ -1,4 +1,9 @@
-import sys
+from item import *
+
+
+# def __init__():
+#     os.makedirs(name)
+
 
 def user_view():
     file = open('db/session.txt', 'r')
@@ -9,34 +14,6 @@ def user_login(username):
     file = open('db/session.txt', 'w')
     file.write(username)
 
-
-class Item:
-
-    def __init__(self, name, price, selling_price):
-        self.name = name
-        self.price = price
-        self.selling_price = selling_price
-
-    def save(self):
-        item = {
-            'name': self.name,
-            'price': self.price,
-            'selling_price': self.selling_price,
-        }
-        print(item)
-
-
-
-def item_create(name, price, selling_price):
-    item = Item(name, price, selling_price)
-    item.save()
-
-
-def item_all():
-    print('All items')
-
-def item_view(id):
-    print(id)
 
 if __name__ == '__main__':
     arguments = sys.argv[1:]
@@ -57,3 +34,6 @@ if __name__ == '__main__':
             item_all()
         elif command == 'view':
             item_view(*params)
+        elif command == 'search':
+            item_search(*params)
+

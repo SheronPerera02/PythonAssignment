@@ -24,3 +24,7 @@ item all
 ```
 item view <id>
 ```
+### Search
+```
+item search <key> <value>
+```
