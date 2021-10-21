@@ -1,9 +1,13 @@
 # - Instructions -
 
 # User
-### Login
+### Sign Un
 ```
-user login <username>
+user signup <username> <password>
+```
+### Sign In
+```
+user signin <username> <password>
 ```
 ### View
 ```

@@ -1,19 +1,6 @@
 from item import *
-
-
-# def __init__():
-#     os.makedirs(name)
-
-
-def user_view():
-    file = open('db/session.txt', 'r')
-    username = file.read()
-    print(username)
-
-def user_login(username):
-    file = open('db/session.txt', 'w')
-    file.write(username)
-
+from cart import *
+from auth import *
 
 if __name__ == '__main__':
     arguments = sys.argv[1:]
@@ -23,8 +10,10 @@ if __name__ == '__main__':
     params = arguments[2:]
 
     if section == 'user':
-        if command == 'login':
-            user_login(*params)
+        if command == 'signup':
+            user_signup(*params)
+        if command == 'signin':
+            user_signin(*params)
         elif command == 'view':
             user_view()
     elif section == 'item':
@@ -36,4 +25,7 @@ if __name__ == '__main__':
             item_view(*params)
         elif command == 'search':
             item_search(*params)
+    elif section == 'cart':
+        if command == 'add':
+            cart_add(*params)
 

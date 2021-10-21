@@ -3,7 +3,7 @@ import json
 import os
 
 __items_folder__ = 'db/items'
-__item_id_path__ = 'db/item_id'
+__item_id_path__ = 'db/ids/item_id'
 
 
 class Item:
@@ -60,6 +60,7 @@ class Item:
                 filteredItems.append(item)
         
         return filteredItems
+    
 
 def item_create(name, price, selling_price):
     item = Item(name, price, selling_price)
