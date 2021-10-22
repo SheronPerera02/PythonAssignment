@@ -16,6 +16,11 @@ def user_view():
         user = json.load(usersFolderFile)
         print(user)
 
+def user_signout():
+     sessionFile = open(__session_file__, 'w')
+     sessionFile.write('')
+     print('Signed Out')
+
 def user_signin(username, password):
     
     files = os.listdir(__users_folder__)

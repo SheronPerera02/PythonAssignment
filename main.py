@@ -12,8 +12,10 @@ if __name__ == '__main__':
     if section == 'user':
         if command == 'signup':
             user_signup(*params)
-        if command == 'signin':
+        elif command == 'signin':
             user_signin(*params)
+        elif command == 'signout':
+            user_signout()
         elif command == 'view':
             user_view()
     elif section == 'item':
