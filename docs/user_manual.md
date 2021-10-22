@@ -1,13 +1,17 @@
 # - Instructions -
 
 # User
-### Sign Un
+### Sign Up
 ```
 user signup <username> <password>
 ```
 ### Sign In
 ```
 user signin <username> <password>
+```
+### Sign Out
+```
+user signout
 ```
 ### View
 ```
