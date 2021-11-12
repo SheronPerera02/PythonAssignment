@@ -30,4 +30,6 @@ if __name__ == '__main__':
     elif section == 'cart':
         if command == 'add':
             cart_add(*params)
+        elif command == 'remove':
+            cart_remove(*params)
 

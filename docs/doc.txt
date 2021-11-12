@@ -1,0 +1,23 @@
+================
+ Authentication
+================
+
+1. Register
+2. Signup
+3. Signin
+
+================
+ Manage Items
+================
+
+1. Create item
+2. View all items
+3. View single item
+4. Search item
+
+================
+ Cart
+================
+
+1. Add items to cart
+2. Remove items from cart

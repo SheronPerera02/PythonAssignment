@@ -36,3 +36,12 @@ item view <id>
 ```
 item search <key> <value>
 ```
+
+# Cart
+### Add To Cart
+```
+cart add <itemId> <qty>
+```
+### Remove From Cart
+```
+cart remove <cartItemId>
